@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="https://unpkg.com/react@16.1.1/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@16.1.1/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+<style type="text/css">
+
+#first {
+	color:navy;
+	border-style:groove; 
+	border-width: 10px;
+	border-color:yellow;
+	width:80%;
+}
+#second { align:center;
+	color:aqua;
+	text-align:center; 
+	border-style:groove; 
+	border-width: 10px;
+	border-color:pink;
+	width:80%;
+}
+
+#third {align:center;
+	color:yellow;
+	text-align:center; 
+	border-style:groove; 
+	border-width: 10px;
+	border-color:aqua;
+	width:80%;
+}
+#nav {  float:right;
+	background-color:hotpink;
+	width:18%;
+	border-style:groove; 
+	border-width: 2px;
+	border-color:blue;
+}
+#footer {text-align:center; 
+	border-style:groove; 
+	border-width: 8px;
+	border-color:blue;
+	width:100%;
+}
+#form {
+	align:center;
+	border: 8px solid hotpink;
+	display: inline-block;
+	text-align: center;
+	padding: 10px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;	
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-box-shadow: 0 0 14px 0 rgba(50, 50, 50, 0.5);
+}
+
+#head { align:center;
+	text-align:center;
+	background-color:lightpink;
+	border-style:groove; 
+	border-width: 8px;
+	border-color:blue;
+	width:100%;
+}
+</style>
+</head>
+
+<body>
+<div id ="head"></div>
+<div id ="nav"></div>
+<div id ="first"></div>
+<div id ="second"></div>
+<div id ="third"></div>
+<div id ="container"></div>
+
+<script type ="text/babel">
+class ReactHead extends React.Component {render(){return <div><h1>The Museum of Your Future</h1>
+</div>
+    }
+}    
+ReactDOM.render(<ReactHead />, document.getElementById('head'));
+
+class ReactNav extends React.Component {
+render()
+{ return 
+<div><h5>See our Sister Establishments!</h5>
+<ul><b><li><a href="https://www.metmuseum.org">Go to Metropolitan Museum of Art</a></li>
+<li><a href="https://www.amnh.org">American Museum of Natural History</a></li>
+<li><a href="https://www.MOMA.org">Museum of Modern Arts</a></li>
+<li><a href="https://www.museumofsex.com">Museum of Sex</a></li>
+<li><a href="https://www.mcny.org">Museum of The City of New York</a></li>
+</b></ul></div>	
+}  
+}
+ReactDOM.render(<ReactNav />, document.getElementById('nav'));
+ 
+class ReactHead3 extends React.Component {
+render()
+{return  
+<div><h4>1 August 2019, The Museum of Your Future</h4>
+The Museum of Your Future was created with YOU in mind, as well as your future. 
+We wanted to create an experience that would give perspective, simple and 
+critical thought, and generate emotions to empower our visitors. 
+We want our guests to walk out with an experience that forces them to 
+remove themselves from their current place in life and see themselves 1 month, 1 year or 5 years down the road. 
+We can't wait for you to join us!
+</div>
+    }
+} 
+ReactDOM.render(<ReactHead3 />, document.getElementById('first'));  
+
+class ReactHead3D extends React.Component {
+render()
+{return
+<div><h4>29 August 2019, Latest Update After Grand Opening!</h4>
+The Museum of Your Future Grand Opening has been a grand success, and critics are raving! In just four weeks, we have seen over 
+25,000 people come through to experience the awe that is the MYF!
+</div>
+	}
+}
+ReactDOM.render(<ReactHead3D />, document.getElementById('second'));
+
+class ReactHead4D extends React.Component {
+render()
+{return
+<div><h4>1 November 2019, 1,000,000 Visitors!</h4>
+THANK YOU! To all that came out to experience the MYF, we have reached 
+1,000,000 visitors! We are so grateful to have had so many folks interested 
+in the experience. We hope to continue our awe-inspiring and 
+thought-provoking exhibit.
+</div>
+	}
+}
+ReactDOM.render(<ReactHead4D />, document.getElementById('third'));
+
+class ReactHead4 extends React.Component {
+render()
+{return <div id ="form">
+		Contact us!
+		<ul>
+		<li>The Museum of You Future</li>
+		<li>917-867-5309</li>
+		<li>MOYF@museumNY.com</li>
+		</ul>
+		</div>
+	}
+}
+ReactDOM.render(<ReactHead4 />, document.getElementById('container'));
+
+
+</script>
+</body>
+<div id = "footer">
+<footer><p><b>Copyright &copy; MYF or Legends?</b></p></footer></div>
+</html>
